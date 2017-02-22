@@ -5,17 +5,19 @@ import { Routes, RouterModule }         from '@angular/router';
 // app
 import { AppComponent }                 from './app.component';
 import { LoginComponent }               from './auth/login/login.component';
-//import { OtherComponent }               from './other/other.component';
-//import { AuthGuard }                    from './auth/auth.service';
+import { MembersComponent }             from './auth/members/members.component';
 //import { SignupComponent }              from './auth/signup/signup.component';
 //import { EmailComponent }               from './auth/email/email.component';
+
+// services
+//import { AuthGuard }                    from './auth/auth.service';
 
 export const router: Routes = [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
     //{ path: 'signup', component: SignupComponent },
     //{ path: 'login-email', component: EmailComponent },
-    //{ path: 'members', component: OtherComponent, canActivate: [AuthGuard] }
+    { path: 'members', component: MembersComponent }//, canActivate: [AuthGuard] }
 
 ]
 
