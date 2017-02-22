@@ -8,6 +8,8 @@ import { HttpModule }           from '@angular/http';
 import { AuthModule }           from './auth/auth.module';
 import { AppComponent }         from './app.component';
 
+import { routes }               from './app.routes';
+
 @NgModule({
      declarations: [
          AppComponent
@@ -16,7 +18,8 @@ import { AppComponent }         from './app.component';
          BrowserModule,
          FormsModule,
          HttpModule,
-         AuthModule
+         AuthModule,
+         routes
      ],
      providers: [],
      bootstrap: [AppComponent]
