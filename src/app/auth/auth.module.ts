@@ -1,6 +1,8 @@
 // angular
 import { NgModule }             from '@angular/core';
 import { CommonModule }         from '@angular/common';
+import { FormsModule }          from '@angular/forms';
+import { RouterModule }         from '@angular/router';
 
 // libraries
 import { AngularFireModule }    from 'angularfire2';
@@ -23,13 +25,15 @@ export const firebaseConfig = {
 @NgModule({
     imports: [
         CommonModule,
-        AngularFireModule.initializeApp(firebaseConfig)
+        FormsModule,
+        AngularFireModule.initializeApp(firebaseConfig),
+        RouterModule
     ],
     declarations: [
         LoginComponent, 
         EmailComponent, 
         SignupComponent, 
-        MembersComponent
+        MembersComponent,
     ]
 })
 export class AuthModule { }

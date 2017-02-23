@@ -22,7 +22,7 @@ export class MembersComponent implements OnInit {
     error: any;
     state: string = '';
     
-    constructor(public af: AngularFire, public router: Router) {
+    constructor(public af: AngularFire, private router: Router) {
         this.af.auth.subscribe((auth) => {
             if (auth){
                 this.name = auth;
