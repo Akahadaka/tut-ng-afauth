@@ -7,7 +7,7 @@
     <form #formData="ngForm" (ngSubmit)="onSubmit(formData)">
 
         <input class="txt" type="text" placeholder="Email address.." (ngModel)="email" name="email" required>
-        <input class="txt" type="password" placeholder="Password" (ngMdoel)="password" name="passowrd" required>
+        <input class="txt" type="password" placeholder="Password" (ngModel)="password" name="passowrd" required>
         
         <button class="basic-btn" type="submit" [disabled]="!formData.valid">Log in</button>
         <a class="alc" routerLink="/signup">Don't have an account?</a>
